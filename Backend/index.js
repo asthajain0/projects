@@ -11,11 +11,11 @@ app.use(express.json());
 //middlewear to handle cors policy
 //option 1: allow all origins with default of cors(*)
 app.use(cors());
-app.use(cors({
-    origin: "http://localhost:5173", // Allow requests only from frontend
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type"]
-  }));
+// app.use(cors({
+//     origin: "https://projects-omega-wheat.vercel.app/", // Allow requests only from frontend
+//     methods: ["GET", "POST", "PUT", "DELETE"],
+//     allowedHeaders: ["Content-Type"]
+//   }));
 
 app.get('/' , (request,response)=>{
     console.log(request);
