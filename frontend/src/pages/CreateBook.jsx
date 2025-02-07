@@ -42,7 +42,8 @@ const CreateBook = () => {
         <div className='my-4 flex flex-col mx-8'>
           <label className='text-xl mr-4 text-gray-500'>Title</label>
           <input type="text" value={title} onChange={(e)=> setTitle(e.target.value)}
-           className='border-1 border-gray-500 px-4 py-2 w-full my-2 rounded-lg' />
+           className='border-1 border-gray-500 px-4 py-2
+            w-full my-2 rounded-lg' />
         </div>
         <div className='my-4 flex flex-col mx-8'>
           <label className='text-xl mr-4 text-gray-500'>Author</label>
